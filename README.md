@@ -228,7 +228,7 @@ in parentheses can be met and it will match.
 <pre>
 "(T|t)he|car" => <a href="#learn-regex"><strong>The</strong></a> <a href="#learn-regex"><strong>car</strong></a> is parked in <a href="#learn-regex"><strong>the</strong></a> garage.
 </pre>
-
+<br/><br/>
 ## 2.7 Escaping special character
 
 Backslash `\` is used in regular expression to escape the next character. This
