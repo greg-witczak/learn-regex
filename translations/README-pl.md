@@ -34,7 +34,12 @@ na wielkość znaków, więc wyrażenie `The` nie pasuje do łańcucha `the`.
 "The" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on the mat.
 </pre>
 
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+## Licencja
+Źródło: https://github.com/ziishaned/learn-regex
+MIT &copy; [Zeeshan Ahmad](https://twitter.com/ziishaned)
+
 ## 2. Metaznaki
 
 Metaznaki to składowe elementy wyrażeń regularnych. Znaki te, nie oznaczają
@@ -272,7 +277,3 @@ które ułatwiają pracę z wyrażeniami regularnymi. Skróty wyglądają nastę
 |\D|Nie cyfry: `[^\d]`|
 |\s|Dowolny biały znak: `[\t\n\f\r\p{Z}]`|
 |\S|Każdy znak oprócz białych: `[^\s]`|
-
-## Licencja
-Źródło: https://github.com/ziishaned/learn-regex
-MIT &copy; [Zeeshan Ahmad](https://twitter.com/ziishaned)
