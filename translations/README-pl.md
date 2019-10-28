@@ -15,8 +15,6 @@ liczby, podkreślenia i myślniki. Chcemy również ograniczyć liczbę znaków 
 użytkownika, aby nie wyglądała za brzydko. Stosujemy następujące wyrażenie
 regularne, aby sprawdzić poprawność nazwy:
 
-<br/><br/>
-
 ## 1. Najprostsze wyrażenie
 
 Wyrażenie regularne to ciąg znaków, których używamy do przeszukania tekstu.
@@ -36,6 +34,7 @@ na wielkość znaków, więc wyrażenie `The` nie pasuje do łańcucha `the`.
 "The" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on the mat.
 </pre>
 
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 ## 2. Metaznaki
 
 Metaznaki to składowe elementy wyrażeń regularnych. Znaki te, nie oznaczają
