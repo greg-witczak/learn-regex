@@ -177,7 +177,7 @@ regular expression `[0-9]{3}` means: Match exactly 3 digits.
 <pre>
 "[0-9]{3}" => The number was 9.<a href="#learn-regex"><strong>999</strong></a>7 but we rounded it off to 10.0.
 </pre>
-
+<br/><br/>
 ## 2.5 Capturing Group
 
 A capturing group is a group of sub-patterns that is written inside Parentheses 
