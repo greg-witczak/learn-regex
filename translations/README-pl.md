@@ -174,7 +174,7 @@ to wyrażenie `[0-9]{3}` oznacza: dokładnie 3 znaki z zakresu 0 do 9.
 <pre>
 "[0-9]{3}" => The number was 9.<a href="#learn-regex"><strong>999</strong></a>7 but we rounded it off to 10.0.
 </pre>
-<br/><br/>
+<br/><br/><br/><br/>
 ## 2.5 Grupa znaków
 
 Grupa znaków to grupa podwzorców, które zapisywane są w nawiasach `(...)`.
