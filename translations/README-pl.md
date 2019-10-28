@@ -1,36 +1,3 @@
-<p align="center">
-    <br/>
-    <a href="https://github.com/ziishaned/learn-regex">
-        <img src="https://i.imgur.com/bYwl7Vf.png" alt="Learn Regex">
-    </a>
-    <br /><br />
-    <p>
-        <a href="https://twitter.com/home?status=Learn%20regex%20the%20easy%20way%20by%20%40ziishaned%20http%3A//github.com/ziishaned/learn-regex">
-            <img src="https://img.shields.io/badge/twitter-tweet-blue.svg?style=flat-square"/>
-        </a>
-        <a href="https://twitter.com/ziishaned">
-            <img src="https://img.shields.io/badge/feedback-@ziishaned-blue.svg?style=flat-square" />
-        </a>
-    </p>
-</p>
-
-
-## Tłumaczenia:
-
-* [English](../README.md)
-* [Español](../translations/README-es.md)
-* [Français](../translations/README-fr.md)
-* [Português do Brasil](../translations/README-pt_BR.md)
-* [中文版](../translations/README-cn.md)
-* [日本語](../translations/README-ja.md)
-* [한국어](../translations/README-ko.md)
-* [Turkish](../translations/README-tr.md)
-* [Greek](../translations/README-gr.md)
-* [Magyar](../translations/README-hu.md)
-* [Polish](../translations/README-pl.md)
-* [Русский](../translations/README-ru.md)
-* [Tiếng Việt](../translations/README-vn.md)
-
 ## Co to jest wyrażenie regularne?
 
 > Wyrażenie regularne to grupa znaków lub symboli, które służą do odnalezienia określonego wzoru w tekście.
@@ -49,42 +16,6 @@ użytkownika, aby nie wyglądała za brzydko. Stosujemy następujące wyrażenie
 regularne, aby sprawdzić poprawność nazwy:
 
 <br/><br/>
-<p align="center">
-  <img src="../img/regexp-pl.png" alt="Wyrażenie regularne">
-</p>
-
-Powyższe wyrażenie akceptuje łańcuchy `john_doe`, `jo-hn_doe`
-i `john12_as`. Odrzuca `Jo` ponieważ łańcuch zawiera dużą literę
-i jest za krótki.
-
-## Spis treści
-
-- [Najprostsze wyrażenie](#1-najprostsze-wyrażenie)
-- [Metaznaki](#2-metaznaki)
-  - [Kropka](#21-kropka)
-  - [Zestaw znaków](#22-zestaw-znaków)
-    - [Odwrócony zestaw znaków](#221-odwrócony-zestaw-znaków)
-  - [Powtórzenia](#23-powtórzenia)
-    - [Gwiazdka](#231-gwiazdka)
-    - [Plus](#232-plus)
-    - [Znak zapytania](#233-znak-zapytania)
-  - [Klamry](#24-klamry)
-  - [Grupa znaków](#25-grupa-znaków)
-  - [Alternatywa](#26-alternatywa)
-  - [Znak ucieczki](#27-znak-ucieczki)
-  - [Kotwice](#28-kotwice)
-    - [Kareta](#281-kareta)
-    - [Dolar](#282-dolar)
-- [Skróty](#3-skróty)
-- [Lookaround](#4-lookaround)
-  - [Lookahead](#41-lookahead)
-  - [Odwrócony lookahead](#42-odwrócony-lookahead)
-  - [Lookbehind](#43-lookbehind)
-  - [Odwrócony lookbehind](#44-odwrócony-lookbehind)
-- [Flagi](#5-flagi)
-  - [Wielkość znaków](#51-wielkość-znaków)
-  - [Przeszukiwanie globalne](#52-przeszukiwanie-globalne)
-  - [Multilinia](#53-multilinia)
 
 ## 1. Najprostsze wyrażenie
 
@@ -96,8 +27,6 @@ po niej literę `h`, następującą po niej literę `e`.
 "the" => The fat cat sat on <a href="#learn-regex"><strong>the</strong></a> mat.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/dmRygT/1)
-
 Wyrażenie regularne `123` pasuje do łańcucha `123`. Wyrażenie regularne
 jest dopasowywane do danego łańcucha poprzez porównanie każdego znaku,
 jeden po drugim, w wyrażeniu i łańcuchu. Wyrażenia są zwykle wrażliwe
@@ -106,8 +35,6 @@ na wielkość znaków, więc wyrażenie `The` nie pasuje do łańcucha `the`.
 <pre>
 "The" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on the mat.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/1paXsy/1)
 
 ## 2. Metaznaki
 
@@ -141,8 +68,6 @@ po niej literę `a`, następującą po niej literę `r`.
 ".ar" => The <a href="#learn-regex"><strong>car</strong></a> <a href="#learn-regex"><strong>par</strong></a>ked in the <a href="#learn-regex"><strong>gar</strong></a>age.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/xc9GkU/1)
-
 ## 2.2 Zestaw znaków
 
 Zestawy znaków nazywane też klasami znaków. Nawiasy kwadratowe służą do określenia zestawów znaków.
@@ -154,8 +79,6 @@ następującą po niej literę `h`, następującą po niej literę `e`.
 "[Tt]he" => <a href="#learn-regex"><strong>The</strong></a> car parked in <a href="#learn-regex"><strong>the</strong></a> garage.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/2ITLQ4/1)
-
 Jednak kropka w zestawie znaków, oznacza dosłownie kropkę. Wyrażenie regularne
 `ar[.]` oznacza: małą literę `a`, następującą po niej literę `r`,
 następującą po niej `.` kropkę.
@@ -163,8 +86,6 @@ następującą po niej `.` kropkę.
 <pre>
 "ar[.]" => A garage is a good place to park a c<a href="#learn-regex"><strong>ar.</strong></a>
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/wL3xtE/1)
 
 ### 2.2.1 Odwrócony zestaw znaków
 
@@ -176,8 +97,6 @@ następującą po niej literę `a`, następującą po niej literę `r`.
 <pre>
 "[^c]ar" => The car <a href="#learn-regex"><strong>par</strong></a>ked in the <a href="#learn-regex"><strong>gar</strong></a>age.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/nNNlq3/1)
 
 ## 2.3 Powtórzenia
 
@@ -196,8 +115,6 @@ powtórzenia całego zestawu lub klasy. Na przykład, wyrażenie regularne
 "[a-z]*" => T<a href="#learn-regex"><strong>he</strong></a> <a href="#learn-regex"><strong>car</strong></a> <a href="#learn-regex"><strong>parked</strong></a> <a href="#learn-regex"><strong>in</strong></a> <a href="#learn-regex"><strong>the</strong></a> <a href="#learn-regex"><strong>garage</strong></a> #21.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/7m8me5/1)
-
 Symbol `*` może być użyty z metaznakiem `.` by oznaczyć każdy łańcuch
 znaków `.*`. Symbol `*` może być użyty ze znakiem `\s`
 by znaleźć łańcuch zawierający spacje. Na przykład, wyrażenie
@@ -208,8 +125,6 @@ następujące po niej zero lub więcej spacji.
 <pre>
 "\s*cat\s*" => The fat<a href="#learn-regex"><strong> cat </strong></a>sat on the <a href="#learn-regex">con<strong>cat</strong>enation</a>.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/gGrwuz/1)
 
 ### 2.3.2 Plus
 
@@ -222,8 +137,6 @@ dowolny znak, następującą po nim małą literę `t`. W tym wypadku `t` jest o
 "c.+t" => The fat <a href="#learn-regex"><strong>cat sat on the mat</strong></a>.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/Dzf9Aa/1)
-
 ### 2.3.3 Znak zapytania
 
 W wyrażeniach regularnych znak `?` sprawia, że poprzedzający znak jest opcjonalny.
@@ -235,13 +148,9 @@ po niej małą literę `h`, następującą po niej małą literę `e`.
 "[T]he" => <a href="#learn-regex"><strong>The</strong></a> car is parked in the garage.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/cIg9zm/1)
-
 <pre>
 "[T]?he" => <a href="#learn-regex"><strong>The</strong></a> car is parked in t<a href="#learn-regex"><strong>he</strong></a> garage.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/kPpO2x/1)
 
 ## 2.4 Klamry
 
@@ -254,8 +163,6 @@ Na przykład wyrażenie regularne `[0-9]{2,3}` oznacza: przynajmniej
 "[0-9]{2,3}" => The number was 9.<a href="#learn-regex"><strong>999</strong></a>7 but we rounded it off to <a href="#learn-regex"><strong>10</strong></a>.0.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/juM86s/1)
-
 Możemy opuścić drugą liczbę. Na przykład regularne wyrażenie `[0-9]{2,}`
 oznacza: 2 lub więcej znaków. Jeżeli dodatkowo usuniemy przecinek,
 to wyrażenie `[0-9]{3}` oznacza: dokładnie 3 znaki z zakresu 0 do 9.
@@ -264,13 +171,9 @@ to wyrażenie `[0-9]{3}` oznacza: dokładnie 3 znaki z zakresu 0 do 9.
 "[0-9]{2,}" => The number was 9.<a href="#learn-regex"><strong>9997</strong></a> but we rounded it off to <a href="#learn-regex"><strong>10</strong></a>.0.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/Gdy4w5/1)
-
 <pre>
 "[0-9]{3}" => The number was 9.<a href="#learn-regex"><strong>999</strong></a>7 but we rounded it off to 10.0.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/Sivu30/1)
 
 ## 2.5 Grupa znaków
 
@@ -286,8 +189,6 @@ alternatywy `|` wewnątrz grupy. Na przykład wyrażenie `(c|g|p)ar` oznacza: ma
 "(c|g|p)ar" => The <a href="#learn-regex"><strong>car</strong></a> is <a href="#learn-regex"><strong>par</strong></a>ked in the <a href="#learn-regex"><strong>gar</strong></a>age.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/tUxrBG/1)
-
 ## 2.6 Alternatywa
 
 W wyrażeniach regularnych pionowa kreska `|` oznacza alternatywę.
@@ -301,8 +202,6 @@ po niej literę `a`, następującą po niej literę `r`.
 <pre>
 "(T|t)he|car" => <a href="#learn-regex"><strong>The</strong></a> <a href="#learn-regex"><strong>car</strong></a> is parked in <a href="#learn-regex"><strong>the</strong></a> garage.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/fBXyX0/1)
 
 ## 2.7 Znak ucieczki
 
@@ -318,8 +217,6 @@ literę `a`, następującą po niej literę `t`, następującą kropkę `.`, kt�
 <pre>
 "(f|c|m)at\.?" => The <a href="#learn-regex"><strong>fat</strong></a> <a href="#learn-regex"><strong>cat</strong></a> sat on the <a href="#learn-regex"><strong>mat.</strong></a>
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/DOc5Nu/1)
 
 ## 2.8 Kotwice
 
@@ -342,13 +239,9 @@ po niej literę `e`.
 "(T|t)he" => <a href="#learn-regex"><strong>The</strong></a> car is parked in <a href="#learn-regex"><strong>the</strong></a> garage.
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/5ljjgB/1)
-
 <pre>
 "^(T|t)he" => <a href="#learn-regex"><strong>The</strong></a> car is parked in the garage.
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/jXrKne/1)
 
 ### 2.8.2 Dolar
 
@@ -361,13 +254,9 @@ dopasowanie musi być końcem łańcucha.
 "(at\.)" => The fat c<a href="#learn-regex"><strong>at.</strong></a> s<a href="#learn-regex"><strong>at.</strong></a> on the m<a href="#learn-regex"><strong>at.</strong></a>
 </pre>
 
-[Przetestuj wyrażenie](https://regex101.com/r/y4Au4D/1)
-
 <pre>
 "(at\.)$" => The fat cat. sat. on the m<a href="#learn-regex"><strong>at.</strong></a>
 </pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/t0AkOd/1)
 
 ##  3. Skróty
 
@@ -384,165 +273,6 @@ które ułatwiają pracę z wyrażeniami regularnymi. Skróty wyglądają nastę
 |\s|Dowolny biały znak: `[\t\n\f\r\p{Z}]`|
 |\S|Każdy znak oprócz białych: `[^\s]`|
 
-## 4. Lookaround
-
-Lookbehind i lookahead (nazywane również lookaround) to specyficzne typy
-***niezwracających grup*** (dopasowują wzorzec, ale nie zwracają wartości).
-Lookaround używane są w sytuacji, gdy mamy wzorzec i jest on poprzedzony innym wzorcem,
-lub następuje po nim kolejny wzorzec. Na przykład, chcemy mieć wszystkie
-numery, które są poprzedzone znakiem `$` w takim łańcuchu `$4.44 and $10.88`.
-Użyjemy takiego wyrażenia regularnego `(?<=\$)[0-9\.]*` które oznacza: znajdź
-wszystkie liczby ze znakiem `.` poprzedzone znakiem `$`. W wyrażeniach regularnych
-wyróżniamy:
-
-|Symbol|Opis|
-|:----:|----|
-|?=|Lookahead|
-|?!|Odwrócony lookahead|
-|?<=|Lookbehind|
-|?<!|Odwrócony lookbehind|
-
-### 4.1 Lookahead
-
-Lookahead stwierdza, że po pierwszej części wyrażenia musi następować
-następne wyrażenie. Zwracane dopasowanie zawiera tylko tekst, który został
-dopasowany przez pierwszą część wyrażenia. Stosuje się je w nawiasach wraz
-ze znakami zapytania i równości: `(?=...)`. Wyrażenie lookahead
-wpisuje się po znaku równości. Na przykład wyrażenie `(T|t)he(?=\sfat)`
-oznacza: opcjonalną małą literę `t` lub dużą `T`, następującą po niej
-literę `h`, następującą po niej literę `e`. W nawiasach definiujemy
-wyrażenie lookahead, które mówi aby dopasować `The` lub `the` i następujące
-po nich `fat`.
-
-<pre>
-"(T|t)he(?=\sfat)" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on the mat.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/IDDARt/1)
-
-### 4.2 Odwrócony lookahead
-
-Używany jest, gdy potrzebujemy dopasowania z łańcucha, po których nie następują
-żadne wzorce. Odwrócony lookahead definiujemy w nawiasach, stosując znak negacji
-`!` po znaku zapytania, na przykład: `(?!...)`. Popatrzmy na następujące wyrażenie
-`(T|t)he(?!\sfat)` które oznacza: znajdź wszystkie słowa `The` lub `the` w łańcuchu,
-po których nie następuje słowo `fat`, poprzedzone spacją.
-
-<pre>
-"(T|t)he(?!\sfat)" => The fat cat sat on <a href="#learn-regex"><strong>the</strong></a> mat.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/V32Npg/1)
-
-### 4.3 Lookbehind
-
-Lookbehind używany jest do odnalezienia wszystkich dopasowań poprzedzonych konkretnym
-wzorcem. Wyrażenie lookbehind zapisujemy tak: `(?<=...)`. Na przykład, wyrażenie
-`(?<=(T|t)he\s)(fat|mat)` oznacza: znajdź wszystkie słowa `fat` lub `mat` w łańcuchu,
-które znajdują się po słowach `The` lub `the`.
-
-<pre>
-"(?<=(T|t)he\s)(fat|mat)" => The <a href="#learn-regex"><strong>fat</strong></a> cat sat on the <a href="#learn-regex"><strong>mat</strong></a>.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/avH165/1)
-
-### 4.4 Odwrócony lookbehind
-
-Odwrócony używany jest do odnalezienia wszystkich dopasowań niepoprzedzonych konkretnym
-wzorcem. Odwrócony lookbehind zapisujemy tak: `(?<!...)`. Na przykład, wyrażenie
-`(?<!(T|t)he\s)(cat)` oznacza: znajdź wszystkie słowa `cat` w stringu, które nie następują
-po słowach `The` lub `the`.
-
-<pre>
-"(?&lt;!(T|t)he\s)(cat)" => The cat sat on <a href="#learn-regex"><strong>cat</strong></a>.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/8Efx5G/1)
-
-## 5. Flagi
-
-Flagi nazywane są także modyfikatorami, ponieważ zmieniają wynik wyrażenia regularnego.
-Flagi mogą być używane w każdej kombinacji i są integralną częścią wyrażeń regularnych.
-
-|Flaga|Opis|
-|:----:|----|
-|i|Wielkość znaków: Sprawia, że dopasowanie nie jest wrażliwe na wielkość znaków.|
-|g|Przeszukanie globalne: Wyszukiwanie wzorca w całym łańcuchu.|
-|m|Multilinia: Sprawia, że kotwice działają na każdej linii.|
-
-### 5.1 Wielkość znaków
-
-Modyfikator `i` używany jest, gdy wielkość liter nie ma znaczenia. Na przykład
-wyrażenie `/The/gi` oznacza: dużą literę `T`, następującą po niej literę `h`,
-następującą po niej literę `e`. A na końcu wyrażenia, flaga `i` żeby ignorować
-wielkość znaków. Jak widać, została też użyta flaga `g` ponieważ chcemy przeszukać
-cały łańcuch.
-
-<pre>
-"The" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on the mat.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/dpQyf9/1)
-
-<pre>
-"/The/gi" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on <a href="#learn-regex"><strong>the</strong></a> mat.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/ahfiuh/1)
-
-### 5.2 Przeszukiwanie globalne
-
-Modyfikator `g` używany jest do przeszukiwania całego łańcucha (znajdź wszystko,
-a nie tylko zatrzymuj się na pierwszym). Na przykład wyrażenie `/.(at)/g`
-oznacza: każdy znak z wyjątkiem nowej linii, następującą po nim literę `a`,
-następującą po niej literę `t`. Ponieważ użyliśmy na końcu wyrażenia flagi `g`,
-wyszukane zostaną wszystkie dopasowania w łańcuchu, a nie tylko pierwszy (domyślne zachowanie).
-
-<pre>
-"/.(at)/" => The <a href="#learn-regex"><strong>fat</strong></a> cat sat on the mat.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/jnk6gM/1)
-
-<pre>
-"/.(at)/g" => The <a href="#learn-regex"><strong>fat</strong></a> <a href="#learn-regex"><strong>cat</strong></a> <a href="#learn-regex"><strong>sat</strong></a> on the <a href="#learn-regex"><strong>mat</strong></a>.
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/dO1nef/1)
-
-### 5.3 Multilinia
-
-Modyfikator `m` używany jest do dopasowywania w wielu liniach. Jak wspominaliśmy
-wcześniej, kotwice `(^, $)` używane są do sprawdzania czy wzorzec jest początkiem
-lub końcem łańcucha. Jeśli chcemy, żeby kotwice zadziałały w każdej linii, używamy
-wtedy flagi `m`. Na przykład wyrażenie `/at(.)?$/gm` oznacza: małą literę `a`,
-następującą po niej małą literę `t`, opcjonalnie dowolny znak z wyjątkiem nowej linii.
-I ponieważ użyliśmy flagi `m` dopasowywane będą wzorce na końcu każdej linii w łańcuchu.
-
-<pre>
-"/.at(.)?$/" => The fat
-                cat sat
-                on the <a href="#learn-regex"><strong>mat.</strong></a>
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/hoGMkP/1)
-
-<pre>
-"/.at(.)?$/gm" => The <a href="#learn-regex"><strong>fat</strong></a>
-                  cat <a href="#learn-regex"><strong>sat</strong></a>
-                  on the <a href="#learn-regex"><strong>mat.</strong></a>
-</pre>
-
-[Przetestuj wyrażenie](https://regex101.com/r/E88WE2/1)
-
-## Kontrybucja
-
-* Zgłaszanie błędów
-* Otwieranie pull request z poprawkami
-* Dzielenie się poradnikiem
-* Skontaktuj się ze mną ziishaned@gmail.com lub [![Twitter URL](https://img.shields.io/twitter/url/https/twitter.com/ziishaned.svg?style=social&label=Follow%20%40ziishaned)](https://twitter.com/ziishaned)
-
 ## Licencja
-
+Źródło: https://github.com/ziishaned/learn-regex
 MIT &copy; [Zeeshan Ahmad](https://twitter.com/ziishaned)
