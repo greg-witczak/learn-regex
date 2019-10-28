@@ -34,7 +34,7 @@ not match the string `the`.
 "The" => <a href="#learn-regex"><strong>The</strong></a> fat cat sat on the mat.
 </pre>
 
-<br/><br/><br/><br/><br/><br/><br/>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 ## 2. Meta Characters
 
 Meta characters are the building blocks of the regular expressions.  Meta
