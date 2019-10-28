@@ -67,7 +67,7 @@ letter `a`, followed by the letter `r`.
 <pre>
 ".ar" => The <a href="#learn-regex"><strong>car</strong></a> <a href="#learn-regex"><strong>par</strong></a>ked in the <a href="#learn-regex"><strong>gar</strong></a>age.
 </pre>
-
+<br/><br/>
 ## 2.2 Character set
 
 Character sets are also called character class. Square brackets are used to
